@@ -1,0 +1,60 @@
+.container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+  background-color: lightcyan;
+}
+
+.welcome-container {
+  max-width: 800px;
+  width: 100%;
+  padding: 20px;
+  background: white;
+  border-radius: 8px;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+  overflow: hidden;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.welcome-image {
+  max-width: 100%;
+  height: auto;
+  border-radius: 8px 8px 0 0;
+}
+
+.welcome-text {
+  padding: 20px;
+  text-align: center;
+}
+
+.welcome-text p {
+  font-size: 24px;
+  margin-bottom: 20px;
+}
+
+button {
+  padding: 10px 20px;
+  background-color: blue;
+  color: white;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+  font-size: 16px;
+}
+
+.userName {
+  color: orangered;
+}
+
+button:hover {
+  background-color: lightblue;
+}
+
+@media (max-width: 768px) {
+  .welcome-container {
+    border-radius: 0;
+  }
+}

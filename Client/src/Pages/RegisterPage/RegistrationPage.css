@@ -1,0 +1,103 @@
+.container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+  background-color: lightslategray;
+}
+
+.register-container {
+  width: 100%;
+  max-width: 800px;
+  padding: 20px;
+  background: white;
+  border-radius: 8px;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+  overflow: hidden;
+  display: flex;
+  flex-wrap: wrap;
+}
+
+.register-card {
+  display: flex;
+  width: 100%;
+}
+
+.register-left-side {
+  flex: 1;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 20px;
+}
+
+.register-image {
+  max-width: 100%;
+  height: auto;
+  border-radius: 8px;
+}
+
+.register-right-side {
+  flex: 1;
+  padding: 20px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  text-align: center;
+}
+
+form {
+  display: flex;
+  flex-direction: column;
+}
+
+input {
+  margin-bottom: 15px;
+  padding: 10px;
+  font-size: 16px;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+}
+
+button {
+  padding: 10px;
+  background-color: blue;
+  color: white;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+  font-size: 16px;
+}
+
+button:hover {
+  background-color: lightblue;
+}
+
+p {
+  margin-top: 10px;
+}
+
+.error-message{
+    color: red;
+}
+
+span {
+  color: blue;
+  cursor: pointer;
+}
+
+span:hover {
+  text-decoration: underline;
+}
+
+@media (max-width: 768px) {
+  .register-card {
+    flex-direction: column;
+  }
+
+  .register-left-side,
+  .register-right-side {
+    flex: none;
+    width: 100%;
+  }
+}
